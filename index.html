@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>ANDREAN</h1>
+          <div class="contact-info">
+            <a href="mailto:your-email@example.com">
+              <i class="fa fa-envelope"></i>
+              your-email@example.com
+            </a>
+            <a href="tel:+1234567890">
+              <i class="fa fa-phone"></i>
+              +1234567890
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <div class="container">
+          <!-- Intro content goes here -->
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-photo">
+              <img src="my-photo.jpg" alt="Andrean" />
+            </div>
+            <div class="about-text">
+              <h1>Hi, I am Andrean</h1>
+              <p>
+                A passionate fullstack developer with a strong interest in
+                creating innovative and user-friendly applications. I thrive in
+                dynamic and collaborative environments, where I can leverage my
+                skills to bring ideas to life. With a solid foundation in both
+                front-end and back-end development, I enjoy working on diverse
+                projects that challenge me to continuously learn and grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h1>Skills</h1>
+          <div class="skills-container">
+            <div class="skill">
+              <i class="fa fa-laptop"></i>
+              Front-end Development
+            </div>
+            <div class="skill">
+              <i class="fa fa-database"></i>
+              Back-end Development
+            </div>
+            <div class="skill">
+              <i class="fa fa-cogs"></i>
+              Databases
+            </div>
+            <div class="skill">
+              <i class="fa fa-code"></i>
+              Version Control
+            </div>
+            <div class="skill">
+              <i class="fa fa-lightbulb-o"></i>
+              Problem Solving
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h1>Projects</h1>
+          <ol>
+            <li>
+              <h3>E-commerce Website</h3>
+              <p>
+                Developed a full-fledged e-commerce website using technologies
+                like React.js for the front-end and Node.js with Express.js for
+                the back-end. Integrated payment gateways, implemented user
+                authentication and authorization, and ensured a smooth shopping
+                experience for customers.
+              </p>
+            </li>
+            <li>
+              <h3>Task Management Application</h3>
+              <p>
+                Created a task management application using Angular for the
+                front-end and Ruby on Rails for the back-end. Implemented
+                features such as creating, assigning, and tracking tasks,
+                setting deadlines, and generating reports. Ensured responsive
+                design and a user-friendly interface.
+              </p>
+            </li>
+            <li>
+              <h3>Social Media Platform</h3>
+              <p>
+                Built a social media platform using React.js and Redux for the
+                front-end and Django for the back-end. Implemented features like
+                user profiles, post creation, commenting, and liking
+                functionality. Employed RESTful APIs for efficient data
+                retrieval and storage.
+              </p>
+            </li>
+            <li>
+              <h3>Recipe Sharing App</h3>
+              <p>
+                Developed a recipe sharing application using Vue.js for the
+                front-end and Laravel for the back-end. Implemented features
+                like user registration, recipe creation, searching, and
+                favoriting recipes. Integrated third-party APIs for ingredient
+                suggestions and nutritional information.
+              </p>
+            </li>
+            <li>
+              <h3>Booking System</h3>
+              <p>
+                Created a booking system using React.js for the front-end and
+                Node.js with Express.js for the back-end. Designed an intuitive
+                interface for users to book appointments, manage schedules, and
+                receive notifications. Implemented admin functionalities for
+                managing bookings and generating reports.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="recommendations">
+        <div class="container">
+          <h1>Recommendations</h1>
+          <div class="recommendations-container">
+            <div class="recommendation">
+              <p>
+                Andrean is an exceptional fullstack developer with strong
+                problem-solving skills and a deep understanding of programming
+                concepts.
+              </p>
+            </div>
+            <div class="recommendation">
+              <p>
+                His meticulous approach to coding and ability to collaborate
+                effectively make him an asset to any team.
+              </p>
+            </div>
+            <div class="recommendation">
+              <p>
+                His strong teamwork, communication skills, and commitment to
+                continuous improvement make him a valuable asset to any
+                organization.
+              </p>
+            </div>
+          </div>
+          <div class="recommendations-container" id="recommendations-container">
+            <!-- Existing recommendations will be added dynamically here -->
+          </div>
+          <h3>Leave a Recommendation</h3>
+          <form id="recommendation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="recommendation">Message:</label>
+            <textarea
+              id="recommendation"
+              name="recommendation"
+              required
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#intro" class="back-to-top">
+        <i class="fa fa-home"></i>
+        Back to Top
+      </a>
+      <p>&copy; 2023 Andrean</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
